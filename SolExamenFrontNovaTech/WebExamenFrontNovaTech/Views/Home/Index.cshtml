@@ -1,0 +1,272 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>OROGOLD</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <style>
+        body {
+            background-image: url(../img/principal.jpg);
+            background-position: top center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100%;
+            background-color: black;
+        }
+        .efecto{
+            border-radius:100%;
+            opacity:.85;
+            -webkit-transform:scale(0.8) rotate(360deg);
+        }
+        .efecto:hover{
+            transform:scale(1);
+            transition: all 0.2s ease;
+            opacity: 1;
+            box-shadow:0px 0px 50px #9d7a32;
+        }
+    </style>
+</head>
+<body>
+    <form action="/" method="post">
+        <nav style="background-color:black">
+            <div class="nav-wrapper">
+                <div class="row">
+                    <div class="col s1"> </div>
+                    <div class="col s2"><a href="/Home/Index" class="brand-logo"><img src="../../img/orogold.png" width="200" height="55" /></a></div>
+                    <div class="col s8">
+
+                        <ul id="nav-mobile" class="right hide-on-med-and-down">
+                            <li><a target="_blank" href="https://mail.google.com/" style="color:#9d7a32">orogoldspa@orogold.com</a></li>
+                            <li><input type="submit" class="black btn" style="color:#9d7a32; border:4px outset #9d7a32;" formaction="/Home/Formulario" value="Reservar ahora"></li>
+                        </ul>
+
+                    </div>
+                    <div class="col s1"></div>
+                </div>
+
+
+            </div>
+        </nav>
+
+        <div class="row" style="padding-bottom:100px; padding-top:150px">
+            <div class="col s1"></div>
+            <div class="col s4">
+                <h1 style="color:#9d7a32;">OROGOLD</h1>
+                <p style="color:white; font-size:large">Cuando belleza y glamour<br />van de la mano.</p>
+            </div>
+            <div class="col s2"></div>
+            <div class="card white col s4" style="border-radius:20px;">
+                <div class="container">
+
+                    <h5><strong>Reserva ahora tu cita</strong></h5>
+                    <div class="input-field">
+                        <input type="text" id="nom" name="Nombre">
+                        <label for="nom">Nombre</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="email" id="em" name="Correo">
+                        <label for="em">Email</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" id="tel" name="Telefono">
+                        <label for="tel">Teléfono</label>
+                    </div>
+                    <div style="padding-bottom:20px">
+                        <input class="btn" style="color:white; background-color:#9d7a32; padding-right:80px; padding-left:80px;" type="submit" value="Reserva ahora" formaction="/Home/Formulario" />
+                    </div>
+
+                </div>
+            </div>
+            <div class="col s1"></div>
+        </div>
+    </form>
+    <div class="section white">
+        <div class="row container center">
+            <h4 class="header col s12" style="color:#9d7a32">NUESTROS TRATAMIENTOS</h4>
+            <p class="col s12" style="padding-bottom:30px">El tratamiento de la casa de dos horas de duración transporta a los clientes a un oasis de relajación. Incluye un masaje de espalda, hombros, piernas y pies utilizando aceites de masaje.</p>
+            <div class="col s4">
+                <img class="efecto" width="200" height="200" src="../../img/foto2.jpg" alt="Alternate Text" />
+               <h6 style="color:#9d7a32; padding-bottom:20px"><strong>MASAJES CON ORO</strong></h6>
+                <p><strong>SPA Orogold </strong>ofrece tratamientos especializados de la mano de nuestros expertos, con productos excepcionales de marcas galardonadas.</p>
+            </div>
+            <div class="col s4">
+                <img class="efecto" width="200" height="200" src="../../img/foto3.jpg" alt="Alternate Text" />
+                <h6 style="color:#9d7a32"><strong>EXFOLIACIÓN CON PRODUCTOS NATURALES</strong></h6>
+                <p>El tratamiento de la casa de dos horas de duración transporta a los clientes a un oasis de relajación. Incluye un masaje de espalda, hombros, piernas y pies.</p>
+            </div>
+            <div class="col s4">
+                <img class="efecto" width="200" height="200" src="../../img/foto4.jpg" />
+                <h6 style="color:#9d7a32; padding-bottom:20px"><strong>RECONSTRUCCIÓN FACIAL</strong></h6>
+                <p>El tratamiento de la casa de dos horas de duración transporta a los clientes a un oasis de relajación. Incluye un masaje de espalda, hombros, piernas y pies.</p>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="section white">
+        <div class="container">
+            <br /><br /><br /><br /><br />
+        </div>
+    </div>
+
+    <div style="background-color:rgba(00,00,0,0.7);">
+        
+        <div class="parallax-container">
+            <div class="parallax" ><img src="../../img/foto1.jpg"></div>
+            <div class="row center container">
+                <div class="col s12">
+                    <h3 style="color:#d4a407"><strong>QUIENES SOMOS</strong></h3>
+                </div>
+                <div class="col s12">
+                    <p style="color:white">El lujoso spa en Orogold, en México, ofrece un refugio sublime en pleno corazón de la ciudad.</p>
+                </div>
+                <div class="col s12">
+                    <p style="color:white">Los huéspedes pueden disfrutar de un gimnasio de última generación, una relajante sauna o duchas a chorro durante su espalda de 5 estrellas en nuestro hotel boutique en París. Por otra parte, nuestra nueva asociación con ZEAL COSMETICS asegura la disponibilidad de una gama de relajantes tratamientos faciales y corporales para mimarse y revitalizarse.</p>
+                </div>
+                <div class="carousel carousel-slider">
+                    <a class="carousel-item"><img src="../../img/foto5.jpg" height="250"></a>
+                    <a class="carousel-item"><img src="../../img/foto6.jpg" height="250"></a>
+                    <a class="carousel-item"><img src="../../img/foto7.jpg" height="250"></a>
+                    <a class="carousel-item"><img src="../../img/foto8.jpg" height="250"></a>
+                </div>
+            </div>
+            
+        </div>
+        
+    </div>
+    
+
+
+    <div class="section white" style="padding-top:100px">
+        <div class="row">
+            <div class="col s1"></div>
+            <div class="col s7">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.7001653277234!2d-99.16409073711647!3d19.42535676808011!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ffeb596b4797%3A0xb3a79b71de81d223!2sAv.%20Insurgentes%20Sur%2C%20Ju%C3%A1rez%2C%2006600%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses-419!2smx!4v1588712788546!5m2!1ses-419!2smx" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+            
+            <div class="container s4" style="padding-top:50px">
+                <h6 style="color:#9d7a32">HORARIOS</h6>
+                <p>Lunes a Viernes de 10:00 a 19:30.<br />Sábados, Domingos y festivos de 10:00 a 18:30.</p>
+                <br />
+                <h6 style="color:#9d7a32">DIRECCIÓN</h6>
+                <p>Av. Insurgentes Sur 105, Roma Sur, Cuauhtémoc, 06600 Ciudad de México, CDMX, México.</p>
+                <br />
+                <a target="_blank" class="waves-effect white btn" style="color:black; background-color:white; border-color:black; border:2px solid black" href="https://www.google.com.mx/maps/place/Av.+Insurgentes+Sur+105,+Roma+Sur,+Cuauht%C3%A9moc,+06600+Ciudad+de+M%C3%A9xico,+CDMX/19.4254763,-99.1629312,19z/data=!3m1!4b1!4m13!1m7!3m6!1s0x85d1ff6b3dbaf75b:0x8c21bd502927d0f7!2sAv.+Insurgentes+Sur+105,+Roma+Sur,+Cuauht%C3%A9moc,+06600+Ciudad+de+M%C3%A9xico,+CDMX!3b1!8m2!3d19.425475!4d-99.162384!3m4!1s0x85d1ff6b3dbaf75b:0x8c21bd502927d0f7!8m2!3d19.425475!4d-99.162384">Ver en Mapa</a>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="parallax-container">
+        <div class="parallax"><img src="../../img/foto9.jpg"></div>
+    </div>
+
+    <div class="section white" style="padding-bottom:200px; padding-top:50px">
+        <div class="container center">
+            <h4 style="color:#9d7a32">NO DEJES PASAR ESTA OPORTUNIDAD</h4>
+            <br />
+            <p>Sabías que un masaje debido a su acción calmante y analgésica viene dada mediante actos reflejos que afectan al sistema nervisos central o esto causa la liberación de endorfinas que anulan las sensaciones de dolor en el cerebro. El estímulo de los mecanos receptores mediante el masaje se ha demostrado que alivia el dolor y la tensión muscular.</p>
+            <br />
+            <button class="waves-effect btn IrArriba" style="color:white; background-color:#9d7a32; padding-left:50px; padding-right:50px">Reserva ahora</button>
+        </div>
+    </div>
+
+
+    <div class="section black" style="background-color:black">
+        <footer class="page-footer" style="background-color:black">
+            <div class="row">
+                <div class="col s1"> </div>
+                <div class="col s2"><a href="/Home/Index" class="brand-logo"><img src="../../img/orogold.png" width="200" height="55" /></a></div>
+                <div class="col s1"></div>
+                <div class="col s1">
+                    <a target="_blank" href="https://mail.google.com/" class="brand-logo"><img src="../../icon/mail.png" width="40" height="40" /></a>
+                </div>
+                <div class="col s1"><p style="color:#9d7a32">orogoldspa@orogold.com</p></div>
+                <div class="col s2"></div>
+                <div class="col s1">
+                    <a href="#" class="brand-logo"><img src="../../icon/telephone.png" width="40" height="40" /></a>
+                </div>
+                <div class="col s2"><p style="color:#9d7a32"> + 52 5502630032</p></div>
+                <div class="col s1"></div>
+            </div>
+        </footer>
+    </div>
+
+    @if (TempData["exito"] != null)
+    {
+        <div id="modal" class="modal container" style="background-image:url(../../img/foto10.jpg); border:5px outset #4cff00; border-radius:20px">
+            <div class="modal-content"style="background-color:rgba(00,00,0,0.7)">
+                <div style="padding-top:25px; padding-bottom:25px">
+                    <h4 class="center" style="color:white">Mensaje de OROGOLG</h4>
+                </div>
+                <hr style="border-color:#4cff00" />
+                @if (TempData["exito"] != null)
+                {
+                    <h4 style="color:white; padding-top:25px; padding-bottom:25px" class="center">@TempData["exito"]</h4>
+                }
+            </div>
+
+        </div>
+    }
+
+    @if (TempData["error"] != null)
+    {
+        <div id="modal" class="modal container" style="background-image:url(../../img/foto10.jpg); border:5px outset #ff0000; border-radius:20px">
+            <div class="modal-content" style="background-color:rgba(00,00,0,0.7)">
+                <div style="padding-top:25px; padding-bottom:25px">
+                    <h4 class="center" style="color:white">Mensaje de OROGOLG</h4>
+                </div>
+                <hr style="border-color:#ff0000" />
+
+                @if (TempData["error"] != null)
+                {
+                    <h5 style="color:white; padding-top:25px; padding-bottom:25px" class="center">@Html.Raw(TempData["error"])</h5>
+                }
+            </div>
+
+        </div>
+    }
+
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+    <script>
+
+
+        $(document).ready(function () {
+            $('.parallax').parallax();
+        });
+
+
+        $(document).ready(function () {
+            $('.carousel').carousel();
+            setInterval(function () {
+                $('.carousel').carousel('next');
+            }, 2000);
+        });
+
+        $(document).ready(function() {
+            $('.IrArriba').click(function () {
+                $('body, html').animate({
+                    scrollTop: '0px'
+                });
+            });
+        });
+
+        $(document).ready(function () {
+            $('#modal').modal();
+            $('#modal').modal('open');
+        });
+
+
+    </script>
+    
+</body>
+</html>
